@@ -1,0 +1,124 @@
+#title {
+	text-align: center;
+	font-size: 40px;
+	 box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.19), 0px 6px 6px rgba(0, 0, 0, 0.23);
+	background-color: #232323;
+	color:  #e6e6e6;
+	padding: 13px 13px 13px 13px;
+	margin: 13px 113px 13px 116px;
+	border-color:  #1e1f26;
+	border-style: solid;
+}
+
+body {
+	background-color: #e6e6e6; 
+	color: #232323;
+    font-family: 'Fira Code', monospace;
+
+}
+
+ 
+#img-div{
+	padding: 23px 60px 23px 60px;
+	margin: 23px 56px 23px 56px;
+	 
+    justify-content: center;
+}
+
+#img-caption{
+	text-align: center;
+	font-weight: bold;
+
+	font-size: 2vw;
+}
+
+ 
+#image {
+	width: 100%;
+	height: auto;
+	border-color: #232323;
+	border-style: solid;
+	box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.19), 0px 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.list {
+	text-align: center;
+	 font-size: 25px;
+	text-decoration: underline;
+
+}
+
+.content {
+	 padding: 13px 13px 13px 13px;
+	margin: 13px 113px 13px 116px;
+	font-weight: bold;
+	font-size: 20px;
+
+}
+
+.padlist {
+	padding-bottom: 2%;
+}
+
+#tribute-info {
+	border-color: #1e1f26;
+	border-style: solid;
+
+	box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.19), 0px 6px 6px rgba(0, 0, 0, 0.23);
+ margin: 13px 113px 13px 116px;
+}
+
+p {
+	text-align: center;
+	 margin: 13px 113px 13px 116px;
+	  padding: 13px 13px 13px 13px;
+	background-color: #232323;
+	color: #e6e6e6;
+	font-weight: bold;
+	box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.19), 0px 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+#tribute-link {
+	color: white; 
+}
+
+@media (max-width: 1024px){
+	body{
+		font-size: 1vw;
+	}
+	#title {
+			padding: 13px 13px 13px 13px;
+			margin: 0px 0px 0px 0px;
+  }
+
+#img-div{
+	padding: 20px 0px 0px 0px;
+	margin: 0px 4px 0px 0px;
+	 
+    justify-content: center;
+}
+.content {
+	 padding: 13px 33px 13px 53px;
+	margin: 0px 0px 0px 0px;
+	font-weight: bold;
+	font-size: 20px;
+
+}
+#tribute-info {
+	border-color: #1e1f26;
+	border-style: solid;
+
+  margin: 0px;
+}
+
+p{ 
+	font-size: 3vw;
+		margin: 0px 0px 0px 0px;
+}
+.list {
+	font-size: 3vw;
+
+}
+ 
+
+}
