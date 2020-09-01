@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="stylee.css">
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+	<title>sid's survey form </title>
+</head>
+<body >
+	<div id="title">
+		<h1 >freeCodeCamp Survey Form</h1>
+	<p id="description"> Thank you for taking your time for this survey </p>
+	</div>
+	
+
+	<div class="box">
+		<form id="survey-form">
+			<p class="smol_text">Name</p> 
+			<input id ="name-label" type="text" name="name" placeholder="Enter your name"><br>
+			 <p class="smol_text">Email</p> 
+			<input id ="email-label" type="text" name="email" placeholder="Enter your email"><br>
+			<p class="smol_text">Age</p> 
+			<input id ="age-label" type="text" name="age" placeholder="Enter your age"><br>
+
+		    <h4>Whats your favourite tiling window manager?</h4>
+		<label class="btns" >   <input class="checkbo"  type="radio" name="group">i3 gaps <br></label>
+		<label class="btns">   <input  class="checkbo"  type="radio" name="group">bspwm <br></label>
+		 <label class="btns">   <input  class="checkbo"  type="radio" name="group">herbstuflwm<br></label>
+		    <h4> What is your favourite non systemd distro?</h4>  <br>
+		    <select id="dropdown">
+		   	<option  value="artix">artix</option>
+		   	<option value="devuan">devuan</option> 
+		    <option value="slackware">slackware</option>
+		     <option value="gentoo">gentoo</option>
+		       <option value="void">void</option>
+		         <option value="pclinuxos">pclinuxos</option>
+		   </select>
+		  <h4>What would you like to see improved? (Check all that apply)</h4>
+		<label class="btns"></label>  <input class="checkbo" type="checkbox" name="imrprove"> Less usage of systemd <br>
+		   <input class="checkbo" type="checkbox" name="imrprove"> ditching snaps / flatpaks/appimages <br>
+		    <input class="checkbo" type="checkbox" name="imrprove"> aur package converter for every distro<br>
+		     <input class="checkbo" type="checkbox" name="imrprove"> distros using musl <br>
+		       <input  class="checkbo" type="checkbox" name="imrprove"> using wms more than de's <br>
+		         <input class="checkbo"  type="checkbox" name="imrprove"> distros using fish as default shell   <br>
+		           <input class="checkbo"  type="checkbox" name="imrprove"> ugly distros shouldnt exist<br>
+
+		           <h4>Any comments or suggestions?</h4>
+		           <textarea name="comments" id="chat" placeholder="enter your suggestions here"></textarea> <br>
+		           <input id="submit_button" type="submit" value="submit">
+		         
+		</form>
+	</div>
+</body>
+</html>
