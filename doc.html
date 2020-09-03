@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Syne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="doc.css">
+    <title>commandline basics</title>
+</head>
+
+<body>
+    <main id="main-doc">
+    	 <div class="side-nav">
+
+            <a class ="title" href="#" style ="color: #111111;"> Commandline basics</a>
+    		<a href="#intro"> Introduction</a>
+    		<a href="#pwd"> pwd </a>
+    		<a href="#cd">cd</a>
+    		<a href="#ls"> ls </a>
+    		<a href="#touch"> touch </a>
+    		 
+    	</div>
+        <section class="main-section">
+            <header id="header" class="">
+                <h2 id="intro">Introduction</h2>
+            </header><!-- /header -->
+            <p>The world is your oyster, or really the shell is your oyster. What is the shell? The shell is basically a program that takes your commands from the keyboard and sends them to the operating system to perform. If you’ve ever used a GUI, you’ve probably seen programs such as “Terminal” or “Console” these are just programs that launch a shell for you. Throughout this entire course we will be learning about the wonders of the shell.
+                In this course we will use the shell program bash (Bourne Again shell), almost all Linux distributions will default to the bash shell. There are other shells available such as ksh, zsh, tsch, but we won’t get into any of those.
+                Let’s jump right in! Depending on the distribution your shell prompt might change, but for the most part it should adhere to the following format</p>
+            <div class="code">
+                <p>username@hostname:current_directory
+                </p>
+                <p>pete@icebox:/home/pete $ </p>
+                </p>
+            </div>
+            <p>
+                Notice the $ at the end of the prompt? Different shells will have different prompts, in our case the $ is for a normal user using Bash, Bourne or Korn shell, you don't add the prompt symbol when you type the command, just know that it's there.
+                Let’s start with a simple command, echo. The echo command just prints out the text arguments to the display.
+            </p>
+            <div class="code">
+                <p>$ echo Hello World </p> <br>
+            </div>
+        </section>
+        <section class="main-section">
+            <header id="header" class="">
+                <h2 id="pwd">PWD (Print Working Directory)</h2>
+            </header><!-- /header -->
+            <p>Everything in Linux is a file, as you journey deeper into Linux you’ll understand this, but for now just keep that in mind. Every file is organized in a hierarchical directory tree. The first directory in the filesystem is aptly named the root directory. The root directory has many folders and files which you can store more folders and files, etc. Here is an example of what the directory tree looks like:
+            </p>
+            <div class="code">
+                <p>/
+                    |-- bin <br>
+                    | |-- file1 <br>
+                    | |-- file2<br>
+                    |-- etc<br>
+                    | |-- file3<br>
+                    | `-- directory1<br>
+                    | |-- file4<br>
+                    | `-- file5<br>
+                    |-- home<br>
+                    |-- var <br></p> <br>
+            </div>
+            <p>The location of these files and directories are referred to as paths. If you had a folder named home with a folder inside of it named pete and another folder in that folder called Movies, that path would look like this: /home/pete/Movies, pretty simple huh?
+                Navigation of the filesystem, much like real life is helpful if you know where you are and where you are going. To see where you are, you can use the pwd command, this command means “print working directory” and it just shows you which directory you are in, note the path stems from the root directory.</p>
+            <div class="code">
+                <p>$ pwd </p> <br>
+            </div>
+            <p>Where are you? Where am I? Give it a try.
+            </p>
+        </section>
+        <section class="main-section">
+            <header id="header" class="">
+                <h2 id="cd"> CD (Change Directory)</h2>
+            </header><!-- /header -->
+            <p>Now that you know where you are, let’s see if we can move around the filesystem a bit. Remember we’ll need to navigate our way using paths. There are two different ways to specify a path, with absolute and relative paths.</p>
+            <ul>
+                <li>Absolute path: This is the path from the root directory. The root is the head honcho. The root directory is commonly shown as a slash. Every time your path starts with / it means you are starting from the root directory. For example, /home/pete/Desktop</li>
+                <li>Relative path: This is the path from where you are currently in filesystem. If I was in location /home/pete/Documents and wanted to get to a directory inside Documents called taxes, I don’t have to specify the whole path from root like /home/pete/Documents/taxes, I can just go to taxes/ instead.</li>
+            </ul>
+            <p>Now that you know how paths work, we just need something to help us change to the directory we want to. Luckily, we have cd or “change directory” to do that.</p>
+            <div class="code">
+                <p>$ cd /home/pete/Pictures</p> <br>
+            </div>
+            <p>So now I've changed my directory location to /home/pete/Pictures.<br>
+                Now from this directory I have a folder inside called Hawaii, I can navigate to that folder with:</p>
+            <div class="code">
+                <p>$ cd Hawaii</p> <br>
+            </div>
+            <p>Notice how I just used the name of the folder? It’s because I was already in /home/pete/Pictures.</p><br>
+            <p>It can get pretty tiring navigating with absolute and relative paths all the time, luckily there are some shortcuts to help you out.</p><br>
+            <ul>
+                <li>. (current directory). This is the directory you are currently in.</li>
+                <li>.. (parent directory). Takes you to the directory above your current.</li>
+                <li>~ (home directory). This directory defaults to your “home directory”. Such as /home/pete.</li>
+                <li>- (previous directory). This will take you to the previous directory you were just at.</li>
+                </ul>
+                <div class="code">
+                    <p>$ cd .<br>
+                        $ cd ..<br>
+                        $ cd ~<br>
+                        $ cd -<br>
+                    </p> <br>
+                </div>
+        </section>
+        <section class="main-section">
+            <header id="header" class="">
+                <h2 id="ls">LS command </h2>
+            </header><!-- /header -->
+            <h3>What is the ls command?</h3>
+            <p>
+                The ls command is a command-line utility for listing the contents of a directory or directories given to it via standard input. It writes results to standard output. The ls command supports showing a variety of information about files, sorting on a range of options and recursive listing.
+            </p>
+            <h3> How to show the contents of a directory
+            </h3>
+            <p>To show the contents of a directory pass the directory name to the ls command. This will list the contents of the directory in alphabetical order. If your terminal supports colours you may see that file and directory listings are a different colour.</p>
+            <div class="code">
+                ls /home/george <br>
+                bin code dotfiles Downloads go irc logs src <br>
+            </div>
+        </section>
+        <section class="main-section">
+            <header id="header" class="">
+                <h2 id="touch">touch</h2>
+            </header><!-- /header -->
+            <p>Let’s learn how to make some files. A very simple way is to use the touch command. Touch allows you to the create new empty files.</p> <br>
+            <div class="code">
+                $ touch mysuperduperfile <br>
+            </div>
+            <p>And boom, new file!
+            </p> <br>
+            <p>Touch is also used to change timestamps on existing files and directories. Give it a try, do an ls -l on a file and note the timestamp, then touch that file and it will update the timestamp.</p> <br>
+            <p>There are many other ways to create files that involve other things like redirection and text editors, but we’ll get to that in the Text Manipulation course.</p>
+        </section>
+    </main>
+</body>
+
+</html>
