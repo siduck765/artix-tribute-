@@ -11,3 +11,6 @@ simple survey webpage freecodecamp project
 project landing webpage freecodecamp project
 
 <a href ="https://siduck765.github.io/artix-tribute-/indewx.html"> demo </a>
+
+documentation like webpage freecodecamp project
+<a href ="https://siduck765.github.io/artix-tribute-/doc.html"> demo </a>
