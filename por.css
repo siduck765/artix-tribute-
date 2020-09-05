@@ -43,7 +43,7 @@ body {font-family: 'Roboto', sans-serif;
 #projects {
 	display: grid;
 	margin: 5%;
-   column-gap: 20px;
+   column-gap: 0px;
     grid-template-columns: 50%  50%;
 
 }
