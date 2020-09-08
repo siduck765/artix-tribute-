@@ -19,3 +19,7 @@ documentation like webpage freecodecamp project
 a lil fake personal portfolia webpage freecodecamp project
 
 <a href ="https://siduck765.github.io/artix-tribute-/por.html"> demo </a>
+
+google homepage 
+
+<a href ="https://codepen.io/siduck765/full/NWNyrpz" > demo </a>
