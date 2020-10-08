@@ -1,7 +1,7 @@
 # Artix-Tribute
 Personal Web Project for freecodecamp
 
-<a href = "https://siduck765.github.io/artix-tribute-/">demo </a>
+<a href = "https://codepen.io/siduck765/full/dyMRYNa">demo </a>
 
 simple survey webpage freecodecamp project
 
